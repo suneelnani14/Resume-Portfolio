@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Suneel S – Portfolio</title>
+  <title>Suneel S – Creative Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <style>
     :root {
-      --bg: #1e1e1e;
-      --text: #f0f0f0;
-      --accent: #4ade80;
+      --bg: linear-gradient(to right, #cceeff, #e6f7ff);
+      --text: #1a1a1a;
+      --accent: #0077cc;
     }
     body {
       margin: 0;
@@ -17,86 +17,56 @@
       background: var(--bg);
       color: var(--text);
       scroll-behavior: smooth;
+      transition: background 0.5s ease-in-out;
     }
-    header, nav, section {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
+    section {
+      max-width: 800px;
+      margin: 80px auto;
+      padding: 20px 30px;
+      background: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+      transition: transform 0.4s;
     }
     h1, h2 {
       color: var(--accent);
     }
-    ul { padding-left: 20px; }
     .tag {
-      background: #333;
-      padding: 5px 10px;
-      margin: 5px;
+      background: #e0f0ff;
+      padding: 6px 12px;
+      margin: 6px;
       display: inline-block;
-      border-radius: 5px;
-    }
-    .navbar {
-      position: sticky;
-      top: 0;
-      background: #111;
-      padding: 10px;
-      z-index: 999;
-      border-bottom: 1px solid #333;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-    .navbar a {
-      color: var(--text);
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .navbar a:hover {
-      color: var(--accent);
-    }
-    .toggle-btn {
-      position: fixed;
-      top: 15px;
-      right: 20px;
-      background: var(--accent);
-      color: #000;
-      border: none;
-      padding: 8px 14px;
       border-radius: 20px;
-      cursor: pointer;
-      z-index: 1000;
+      font-size: 14px;
+      color: #003366;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
     }
     footer {
       text-align: center;
-      padding: 20px;
+      margin: 50px 0;
       font-size: 14px;
-      color: #888;
+      color: #666;
     }
   </style>
 </head>
 <body>
 
-  <button class="toggle-btn" onclick="toggleTheme()">🌙 Toggle</button>
-
-  <!-- Navigation -->
-  <nav class="navbar">
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-    <a href="#internship">Internship</a>
-    <a href="#project">Project</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <!-- Header -->
-  <header id="about" data-aos="fade-down">
+  <section data-aos="fade-up" data-aos-duration="1200">
     <h1>Suneel S</h1>
     <p>📍 Chittoor, Andhra Pradesh, India</p>
     <p>📞 +91 8919391453 | 📧 <a href="mailto:suneelnani14@gmail.com">suneelnani14@gmail.com</a></p>
     <p>🎯 MCA Fresher | Python Developer | Web Enthusiast</p>
-  </header>
+  </section>
 
-  <!-- Education -->
-  <section id="education" data-aos="fade-up">
+  <section data-aos="fade-right" data-aos-delay="100">
+    <h2>🎯 Career Objective</h2>
+    <p>Motivated MCA fresher with a solid foundation in programming and development. Seeking an entry-level IT role to apply technical skills and grow professionally.</p>
+  </section>
+
+  <section data-aos="fade-left" data-aos-delay="200">
     <h2>🎓 Education</h2>
     <ul>
       <li>MCA – Vemu Institute of Technology (2023–2025)</li>
@@ -106,8 +76,7 @@
     </ul>
   </section>
 
-  <!-- Skills -->
-  <section id="skills" data-aos="zoom-in-up">
+  <section data-aos="zoom-in" data-aos-delay="300">
     <h2>🛠️ Technical Skills</h2>
     <div class="tag">C</div>
     <div class="tag">Python</div>
@@ -117,8 +86,10 @@
     <div class="tag">Git</div>
     <div class="tag">GitHub</div>
     <div class="tag">MS Office</div>
+  </section>
 
-    <h2 style="margin-top:30px;">🤝 Soft Skills</h2>
+  <section data-aos="zoom-out" data-aos-delay="400">
+    <h2>🤝 Soft Skills</h2>
     <div class="tag">Communication</div>
     <div class="tag">Problem-Solving</div>
     <div class="tag">Time Management</div>
@@ -127,55 +98,33 @@
     <div class="tag">AI-Augmented Productivity</div>
   </section>
 
-  <!-- Internship -->
-  <section id="internship" data-aos="fade-right">
+  <section data-aos="fade-up" data-aos-delay="500">
     <h2>💻 Internship</h2>
-    <p><strong>Full Stack Python Developer</strong> – Remote (Oct–Nov 2022)</p>
+    <p><strong>Full Stack Python Developer</strong> (Remote, Oct–Nov 2022)</p>
     <ul>
-      <li>Built mini web projects with Python, HTML, CSS</li>
-      <li>Backend APIs using Flask</li>
-      <li>MVC architecture & frontend/backend integration</li>
-      <li>Improved Git & debugging skills</li>
+      <li>Built web projects with Python, HTML, and CSS</li>
+      <li>Backend development using Flask</li>
+      <li>MVC architecture and frontend/backend integration</li>
+      <li>Improved Git skills and code debugging</li>
     </ul>
   </section>
 
-  <!-- Project -->
-  <section id="project" data-aos="fade-left">
-    <h2>📈 Project</h2>
+  <section data-aos="fade-up" data-aos-delay="600">
+    <h2>📈 Academic Project</h2>
     <p><strong>Federated Learning for EV Energy Demand Prediction</strong> (Dec 2024–Apr 2025)</p>
     <ul>
-      <li>Built ML model with XGBoost & LSTM</li>
+      <li>Developed ML model using XGBoost and LSTM</li>
       <li>Achieved 99.99% R² score</li>
-      <li>Used federated learning for data privacy</li>
-      <li>Integrated blockchain smart contracts</li>
+      <li>Used federated learning to maintain privacy</li>
+      <li>Integrated blockchain for secure data sharing</li>
     </ul>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" data-aos="zoom-in">
-    <h2>📌 Additional Info</h2>
-    <ul>
-      <li>Willing to relocate anywhere in India</li>
-      <li>Flexible with Day/Night shifts</li>
-      <li>Ready to join immediately</li>
-      <li>Languages: English, Tamil, Telugu</li>
-    </ul>
-  </section>
-
-  <!-- Footer -->
   <footer>
-    © 2025 Suneel S • Built with ❤️ and HTML/CSS/JS
+    © 2025 Suneel S • Designed with ❤️ using HTML + AOS
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
-    function toggleTheme() {
-      const root = document.documentElement;
-      const isDark = getComputedStyle(root).getPropertyValue('--bg') === '#1e1e1e';
-      root.style.setProperty('--bg', isDark ? 'white' : '#1e1e1e');
-      root.style.setProperty('--text', isDark ? '#000' : '#f0f0f0');
-    }
-  </script>
+  <script>AOS.init();</script>
 </body>
 </html>
